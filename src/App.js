@@ -1,13 +1,13 @@
-import React
-
-from 'react';
+import React from 'react';
+import Weather from './Weather';
 import './App.css';
+
 
 export default function App() {
   return (
     <div className="App">
       <div className="container">
- <h1>Weather App</h1>
+      <Weather />
  <footer>This project was coded by Audrey Mabry and is open-sourced on 
  <a href='https://github.com/aamabry/aamabry-react-weather' target='blank'> Github</a> and is hosted on <a href='https://aamabry-react-weather.netlify.app/'>Netlify</a>
  </footer>
