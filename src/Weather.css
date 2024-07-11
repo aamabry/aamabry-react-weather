@@ -5,10 +5,6 @@
     border-radius: 4px;
 }
 
-.Weather form {
-    margin-bottom: 20px;
-}
-
 .Weather h1{
 font-size: 24px;
 font-weight: 100;
@@ -26,4 +22,14 @@ line-height: 29px;
     font-weight: 100;
     line-height: 19px;
     list-style: none;
+}
+
+.Weather img {
+}
+
+.Weather .temperature {
+    font-weight: bold;
+    color: rgb(158, 158, 158);
+    font-size: 64px;
+    font-weight: 400;   
 }
