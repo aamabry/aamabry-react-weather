@@ -2,7 +2,9 @@ body{
   font-family: "Google Sans", Roboto, Arial, sans-serif;
   max-width: 600px;
   margin: 30px auto;
-  background-color: black;
+  background: linear-gradient(114.3deg, rgb(19, 126, 57) 0.2%, rgb(8, 65, 91) 68.5%);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
 }
 
 .App footer {
