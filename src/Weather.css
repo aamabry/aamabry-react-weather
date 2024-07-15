@@ -29,8 +29,6 @@ line-height: 29px;
 }
 
 .Weather svg {
-    height: 64px;
-    width: 64px;
     display: inline-block;
     padding: 0;
     margin-top: 0;
