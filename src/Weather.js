@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import WeatherInfo from "./Weatherinfo";
 import WeatherForecast from "./WeatherForecast";
 import axios from "axios";
-import "./Weather.css"
+import "./Weather.css";
 
 
 
@@ -42,21 +42,26 @@ export default function Weather(props){
     if (weatherData.ready){
     return(
         <div className="Weather">
-            <form 
-            onSubmit={handleSubmit}>
+            <form onSubmit={handleSubmit}>
                 <div className="row">
                 <div className="col-9">
-                <input type="search" placeholder="Enter a city..." className="form-control" autoFocus="on"
+                <input 
+                type="search" 
+                placeholder="Enter a city..." 
+                className="form-control" 
+                autoFocus="on"
                 onChange={handleCityChange}/>
                 </div>
                 <div className="col-3">
-                <input type="submit" value="Search" className="btn btn-outline-warning w-100"/>
+                <input 
+                type="submit" 
+                value="Search" 
+                className="btn btn-outline-warning w-100"/>
                 </div>
                 </div>
             </form>
             <WeatherInfo data={weatherData}/>
             <WeatherForecast coord={weatherData.coord}/>
-
         </div>
     )
     } else {

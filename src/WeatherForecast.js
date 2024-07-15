@@ -1,13 +1,29 @@
-import React from "react";
-import WeatherIconSmall from "./WeatherIconSmall";
+import React, { useState } from "react";
+import WeatherForecastDay from "./WeatherForecastDay";
 import "./WeatherForecast.css";
 import axios from "axios";
 
 export default function WeatherForecast(props){
+    let [loaded, setLoaded] = useState(false);
+    let [forecast, setForecast] = useState(null);
+
+
     function handleResponse(response){
-        console.log(response.data);        
+        setForecast(response.data.daily);   
+        setLoaded(true);   
     }
 
+    if (loaded){
+        return (
+            <div className="WeatherForecast">
+                <div className="row">
+                    <div className="col">
+                       <WeatherForecastDay data={forecast[0]} />
+                </div>
+            </div>
+            </div>
+        );
+    } else {
     let apiKey = "1b509431b344bbaa8c5fo44ef08bca6t";
     let lat = props.coord.lat;
     let lon = props.coord.lon;
@@ -15,18 +31,6 @@ export default function WeatherForecast(props){
 
     axios.get(apiUrl).then(handleResponse);
 
-    return (
-        <div className="WeatherForecast">
-            <div className="row">
-                <div className="col">
-                    <div className="WeatherForecast-day">Thur</div>
-                    <WeatherIconSmall code="11d"/>
-                    <div className="WeatherForescast-temp">
-                        <span className="WeatherForecast-temp-max">19°</span>
-                        <span className="WeatherForecast-temp-min">10°</span>
-                    </div>
-                </div>
-            </div>
-        </div>
-    )
+    return null;
+    }
 }
