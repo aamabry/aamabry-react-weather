@@ -11,7 +11,7 @@ export default function WeatherIcon(props){
         "03n": "cloudy",
         "04d": "cloudy",
         "04n": "cloudy",
-        "09d": "rainy",
+        "09d": "rainy-day",
         "09n": "rainy",
         "10d": "pouring",
         "10n": "pouring",
@@ -25,33 +25,7 @@ export default function WeatherIcon(props){
     }
 
     return <WeatherSvg 
-    state={codeMapping[props.code]} height={70} width={70}/>
-}import React from "react";
-import { WeatherSvg } from "weather-icons-animated";
-
-export default function WeatherIcon(props){
-    const codeMapping = {
-        "01d": "sunny",
-        "01n": "clear-night",
-        "02d": "partlycloudy",
-        "02n": "partlycloudy",
-        "03d": "cloudy",
-        "03n": "cloudy",
-        "04d": "cloudy",
-        "04n": "cloudy",
-        "09d": "rainy",
-        "09n": "rainy",
-        "10d": "pouring",
-        "10n": "pouring",
-        "11d": "lightning-rainy",
-        "11n": "lightning-rainy",
-        "13d": "snowy",
-        "13n": "snowy",
-        "50d": "fog",
-        "50n": "fog",
-
-    }
-
-    return <WeatherSvg 
-    icon={codeMapping[props.code]} height={70} width={70}/>
+    state={codeMapping[props.code]} 
+    width={90}
+    height={90}/>
 }
