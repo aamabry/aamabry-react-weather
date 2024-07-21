@@ -13,7 +13,7 @@
 font-size: 60px;
 font-weight: 100;
 margin: 20px 0 20px 0;
-line-height: 29px;
+line-height: 50px;
 }
 
 .Weather ul {
@@ -24,7 +24,7 @@ line-height: 29px;
 .Weather li {
     font-size: 20px;
     font-weight: 100;
-    line-height: 28px;
+    line-height: 25px;
     list-style: none;
 }
 
@@ -33,8 +33,9 @@ line-height: 29px;
     color :rgb(21, 163, 199);
     font-size: 64px;
     line-height: 1;
-    font-weight: 400;   
-    margin-left: 40px;
+    font-weight: 400;  
+    margin-top: -80px; 
+    margin-left: 50px;
     padding: 0;
    
 }
@@ -53,7 +54,6 @@ line-height: 29px;
     text-decoration: none;
 }
 
-.Weather form {
-    color: rgb(6, 65, 90, 0.8);
-    
-}
+
+
+
