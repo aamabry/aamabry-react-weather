@@ -9,7 +9,7 @@
 
 .WeatherForecast-box {
     background-color: rgb(3, 30, 107, 0.2);
-    border-radius: 5px;
+    border-radius: 6px;
     margin: 30px 8px 0;
     box-shadow: 5px 5px 12px rgba(192, 182, 182, 0.338);
     padding: 15px 5px; 
